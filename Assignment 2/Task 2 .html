@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="This is the description for my page . "/>
+        <meta name="author" content="Ashraf Alagamawy"/>
+        <title> Home Page </title>
+        <link rel="stylesheet" href="CSS/master.css">
+        <style>
+            body{
+                background-color: antiquewhite;
+            }
+        </style>
+        <script></script>
+    </head>
+    <body>
+        <form action="test.py" method="POST">
+            <!-- 
+                action => contain the file that receive the data the user send it .
+                method => 
+                        GET-> make the data members appear in the URL of the page .
+                        POST -> make the data members disappear in the URL of the page .
+                placeholder => contain the description of the label field . 
+                required => make the input field must be entered by the user .
+                name => Giving name to the input field to receive the value of it at the back-end .  
+                value => giving a intial value to the field or changing the value of the button as in submit and reset .
+                hidden => to disappear the field input . 
+            -->
+            <div>
+                <label for="user"> Username </label>
+                <br>
+                <br>
+                <input type="text" id="user" placeholder="Enter Your Username" required name="username">
+            </div>
+            <hr>
+            <div>
+                <label for="pass"> Password </label>
+                <br>
+                <br>
+                <input type="password" id="pass" placeholder="Enter Your Password" name="password">
+            </div>
+            <hr>
+            <div>
+                <label for="mo"> Mobile </label>
+                <br>
+                <br>
+                <input type="number" id="mo" placeholder="Enter Your Mobile" name="mobile">
+            </div>
+            <hr>
+            <div>
+                <label for="mail"> Email </label>
+                <br>
+                <br>
+                <input type="email" id="mail" placeholder="Enter Your Email" required name="mail">
+            </div>
+            <hr>
+            <div>
+                <label for="sub"> Subject </label>
+                <br>
+                <br>
+                <input type="text" id="sub" placeholder="Enter The Subject" name="subject">
+            </div>
+            <hr>
+            <input type="hidden" value="01004167358"> <!-- Hidden Input  -->
+            <input type="submit" value="Send Data">
+            <input type="reset" value="Empty Form">
+        </form>
+    </body>
+</html>
